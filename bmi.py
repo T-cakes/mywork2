@@ -6,10 +6,11 @@ weight = float (input ("enter weight: "))
 height = float (input ("enter height: "))
 
 #conversion of centimetres to metre squared
-metresquared = (height/100)**2
+heightmetre = height/100
+metresquared = heightmetre**2
 
 #calculation of BMI
 BMI = round(weight / metresquared, 2)
 
 #BMI output
-print("BMI is {}".format(BMI))
+print("BMI is " + str(BMI))
